@@ -11,10 +11,10 @@ WIDTH, HEIGHT = 1000,800
 window = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("Physics")
 
-def calculate_distance(p1,p2):
+def calculate_distance(p1,p2):  #Высчитывает дистанцию между объектами
     return math.sqrt((p2[1]-p1[1])**2+(p2[0]-p1[0])**2)
 
-def calculate_angle(p1,p2):
+def calculate_angle(p1,p2):     #Высчитывает угол шарика
     return math.atan2(p2[1]-p1[1],p2[0]-p1[0])
 
 def draw(space,window,draw_options,line):
@@ -42,6 +42,18 @@ def create_boundaries(space,width,height):
 
 def create_structure(space,width,height):
     BROWN = (139,69,19,100)
+    FORESTGREEN = (34,139,34,100)
+    SALMON = (250,128,114,100)
+    HOTPINK = (255,105,180,100)
+    ORANGERED = (255, 69, 0, 100)
+    GOLD = (255, 215, 0, 100)
+    AQUAMARINE = (127, 255, 212,100)
+    VIOLET = (238, 130, 238, 100)
+    PURPLE = (128, 0, 128, 100)
+    PERU = (205, 133, 63,100)
+    WHITE = (255, 255, 255,100)
+    BLACK = (0, 0, 0, 100)
+    GRAY = (128,128,128,100)
     rects = [
         [(600,height-90),(40,200),BROWN,100],
         [(900,height-90),(40,200),BROWN,100],

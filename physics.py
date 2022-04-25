@@ -54,11 +54,11 @@ def create_structure(space,width,height):
     WHITE = (255, 255, 255,100)
     BLACK = (0, 0, 0, 100)
     GRAY = (128,128,128,100)
-    rects = [
-        [(600,height-90),(40,200),BROWN,100],
-        [(900,height-90),(40,200),BROWN,100],
-        [(750,height-200),(340,40),BROWN,150]
-    ]
+    rects = [ 
+	[(600,height-90),(40,200),BROWN,100], 
+	[(900,height-90),(40,200),FORESTGREEN,100], 
+	[(750,height-200),(340,40),GOLD,150], 
+	[(60,height-23),(30,20),PERU,100], [(990,height-56),(45,193),AQUAMARINE,100], [(720,height-2),(3,40),GRAY,100] [(600,height-90),(40,200),BLACK,100], [(800,height-54),(40,200),WHITE,100], [(50,height-89),(340,40),PURPLE,150], [(60,height-25),(30,20),VIOLET,100], [(90,height-89),(45,193),ORANGERED,100], [(70,height-26),(3,40),SALMON,100], [(90,height-50),(45,193),HOTPINK,100] ]
     for pos,size,color,mass in rects:
         body = pymunk.Body()
         body.position= pos
